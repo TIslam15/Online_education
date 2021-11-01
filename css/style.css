@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.rightNAV {
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.button {
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+    padding: 5px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7)url('../4.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.text-big {
+    color: white;
+    font-size: 70px;
+}
+
+.text-small {
+    color: white;
+    font-size: 18px;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+.fh {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sh {
+    width: 30%;
+}
+
+.sh img {
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-size: 'Ubuntu', sans-serif;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.tumbnail1 img {
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10%;
+    padding: 0 0 10px 0;
+}
+
+.tumbnail2 img {
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10%;
+    padding: 0 0 10px 0;
+}
+
+.tumbnail3 img {
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10%;
+    padding: 0 0 10px 0;
+}
+
+.secRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.secleft {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    flex-direction: row-reverse;
+}
+
+.secmiddle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact {
+    background-color: darkgrey;
+    height: 555x;
+}
+
+.text-center {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-input {
+    padding: 5px 3px;
+    margin: 14px 0;
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+.btn-dark {
+    color: black;
+    border: 2px solid gray;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media only screen and (max-width:1300px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+        height: 478px;
+    }
+    .rightNAV {
+        text-align: center;
+    }
+    #search {
+        width: 100%;
+    }
+    .burger {
+        display: block;
+    }
+    .h-nav {
+        height: 72px;
+    }
+    .v-class {
+        opacity: 0;
+    }
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .secRight {
+        flex-direction: column-reverse;
+    }
+    .secleft {
+        flex-direction: column-reverse;
+    }
+    .secmiddle {
+        flex-direction: column-reverse;
+    }
+}
+
+.burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+.sectiontag1 {
+    font-size: 40px;
+    padding: 4px;
+}
+
+.sectiontag2 {
+    font-size: 40px;
+    padding: 4px;
+}
+
+.sectiontag3 {
+    font-size: 40px;
+    padding: 4px;
+}
+
+.sectionsubtag1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sectionsubtag2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sectionsubtag3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,
+textarea {
+    width: 80%;
+    margin: 11px 0px;
+    padding: 7px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #myLinks {
+    display: none;
+}
+
+
+/* Style navigation menu links */
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* Add a grey background color on mouse-over */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Style the active link (or home/logo) */
+
+.active {
+    background-color: black;
+    color: white;
+}
